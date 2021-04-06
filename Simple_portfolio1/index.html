@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="hero">
+        <!-- nav bar -->
+        <nav>
+            <img src="image/logo.png" alt="logo" class="logo">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Hire Me</a></li>
+            </ul>
+            <img src="image/moon.png" alt="moon" id="icon">
+        </nav>
+        <!-- text box left-->
+        <div class="info">
+            <h1>I'm <span>Kate</span> Amelia</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere beatae laborum incidunt!<br> Voluptate dignissimos assumenda illo, cum ipsum ex?</p>
+            <a href="#">Download CV</a>
+        </div>
+
+        <!-- image box right-->
+        <div class="img-box">
+            <img src="image/pattern.png" alt="patten" class="back-img">
+            <img src="image/girl.png" alt="girl" class="main-img">
+        </div>
+
+        <!-- scoial media -->
+        <div class="social-media">
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-behance"></i></a>
+            <a href=""><i class="fab fa-dribbble"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i>
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src ="image/sun.png";
+            }else{
+                icon.src ="image/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
